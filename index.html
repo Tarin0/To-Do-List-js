@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+  <body>
+    <div class="container">
+      <div class="header mt-4 flex justify-center gap-4">
+        <h1 class="text-center mt-5 text-3xl font-bold">To Do List</h1>
+        <div>
+          <img class="w-20" src="to-do-list.png" alt="">
+        </div>
+      </div>
+      <div class="main mt-5">
+        <div class="w-96 mx-auto flex">
+          <input type="text" placeholder="Type here" id="input-text" class="input input-bordered input-warning w-full max-w-xs" />
+          <button onclick="addButton()" id="add-btn" class="ml-4 btn btn-outline btn-warning">Add Task</button>
+        </div>
+        <div class="overflow-x-auto w-[50%] mx-auto my-4">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="text-xl">Number</th>
+                <th class="text-xl">Description</th>
+                <th class="text-xl">Action</th>
+              </tr>
+            </thead>
+            <tbody id="content-container">
+              <!-- <tr>
+                <th>1</th>
+                <td>Cyton</td>
+                <td>Quality Control Specialist</td>
+              </tr> -->
+            </tbody>
+          </table>
+          <div class="text-end">
+            <button id="clear-btn" class="mt-4 btn btn-sm btn-accent">Clear All</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
